@@ -1,17 +1,15 @@
 /*\
  *  Author: ...
- *  Class: ...
- *  Description: ...
+ *  Class: driver.cpp
+ *  Description: allowes access to the library
  */
 
 #include <iostream>
 #include <string>
-#include "constellation.h"
+#include "library.h"
 
-const int NUMCONSTELLATIONS = 48;
 
 int main(){
-    constellation arr[NUMCONSTELLATIONS];
     std::cout << "Hello there.";
 
     return 0;

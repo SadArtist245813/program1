@@ -1,7 +1,7 @@
-/*\
+/*
  *  Author: ...
- *  Class: ...
- *  Description: ...
+ *  Class: constellation.h
+ *  Description: Holds information for a constellation
  */
 
 #ifndef CONSTELLATION_H
@@ -12,12 +12,12 @@
 
 class constellation{
     private:
-        string name;
-        string comboStars[];
-        string description;
+        std::string name;
+        std::string comboStars[];
+        std::string description;
 
     public:
-        //to be determined
+        void printConstellation();
 };
 
 #endif
