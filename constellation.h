@@ -1,7 +1,7 @@
 /*
- *  Author: ...
+ *  Author: The Cilestrials
  *  Class: constellation.h
- *  Description: Holds information for a constellation
+ *  Description: Holds information for a constellation.
  */
 
 #ifndef CONSTELLATION_H

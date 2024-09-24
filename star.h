@@ -1,7 +1,7 @@
 /*
- *  Author: ...
- *  Class: star.h
- *  Description: Holds information for a constellation
+ *  Author: The Cilestrials
+ *  Class: star.cpp
+ *  Description: Holds information about a star.
  */
 
 #include <iostream>

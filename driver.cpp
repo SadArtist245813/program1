@@ -1,7 +1,7 @@
 /*\
- *  Author: ...
+ *  Author: The Cilestrials
  *  Class: driver.cpp
- *  Description: allowes access to the library
+ *  Description: allows access to the library
  */
 
 #include <iostream>

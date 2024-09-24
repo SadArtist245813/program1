@@ -1,7 +1,7 @@
 /*
- *  Author: ...
+ *  Author: The Cilestrials
  *  Class: library.h
- *  Description: hold the list of constellations and functions to mess with the list.
+ *  Description: Holds the list of constellations and functions to mess with the list.
  */
 
 #include <iostream>
