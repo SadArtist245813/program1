@@ -5,9 +5,13 @@
  */
 
 #include <iostream>
+#include <vector>
+#include "constellation.h"
 
-class library{
+class Library{
     private:
-         
+         std::vector<Constellation> list;
     public:
+        void buildlibrary();
+        void printAllConstillations();
 };

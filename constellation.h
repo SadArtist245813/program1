@@ -9,14 +9,19 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+#include "star.h"
 
-class constellation{
+class Constellation{
     private:
         std::string name;
-        std::string comboStars[];
+        std::vector<Star> comboStars;
         std::string description;
 
     public:
+        void setName(std::string);
+        void setStar(std::string);
+        void setDescription(std::string);
         void printConstellation();
 };
 
