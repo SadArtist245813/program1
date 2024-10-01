@@ -9,6 +9,7 @@
 #include "star.h"
 
 //allows to set the name of the star
+//requirments: the name
 void Star::setName(std::string str){
     name = str;
 }

@@ -6,12 +6,14 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
 #include "constellation.h"
 
 class Library{
     private:
          std::vector<Constellation> list;
     public:
-        void buildlibrary();
+        void addConstellation(std::string, std::string, std::string);
+        void findConstellation(std::string);
         void printAllConstillations();
 };

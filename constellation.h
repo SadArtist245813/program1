@@ -20,6 +20,7 @@ class Constellation{
 
     public:
         void setName(std::string);
+        std::string getName():
         void setStar(std::string);
         void setDescription(std::string);
         void printConstellation();

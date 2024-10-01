@@ -9,11 +9,14 @@
 #include "star.h"
 
 //allows to set the name of the constellation
-void Constellation::setName(std::string str){
-    name = str;
-}
+//requirments: the name
+void Constellation::setName(std::string str) { name = str; }
+
+//returns the name of the constellation
+std::string Constellation::getName() { return name; }
 
 //allows add a star to the back of the array
+//requirments: the name
 void Constellation::setStar(std::string str){
     Star star;
     star.setName(str);
@@ -21,9 +24,8 @@ void Constellation::setStar(std::string str){
 }
 
 //allows to set the description of the constellation
-void Constellation::setDescription(std::string str){
-    name = str;
-}
+//requirments: the description
+void Constellation::setDescription(std::string str) { name = str; }
 
 //prints out the information about the constellation
 void Constellation::printConstellation(){
