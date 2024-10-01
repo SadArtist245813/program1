@@ -59,14 +59,19 @@ int main(){
 }
 
 Library buildLibrary(){
-    std::ofstream MyFile("Constellations_TEST.txt");
+    std::ifstream MyFile("Constellations_TEST.txt");
     Library lib;
     std::string str1, str2, str3;
 
-    while(!Myfile.eof()){
-        lib.addConstellation(str1, str2, str3);
+    if(MyFile.good()){
+        while(std::getline(MyFile, str1, '#')){
+            std::getline(MyFile, str2, '#');
+            std::getline(MyFile, str3, '#');
+            lib.addConstellation(str1, str2, str3);
+        }
+
     }
 
-    Myfile.close();
+    MyFile.close();
     return lib;
 }
