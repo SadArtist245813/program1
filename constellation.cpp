@@ -18,9 +18,7 @@ std::string Constellation::getName() { return name; }
 //allows add a star to the back of the array
 //requirments: the name
 void Constellation::setStar(std::string str){
-    Star star;
     star.setName(str);
-    comboStars.push_back(star);
 }
 
 //allows to set the description of the constellation
@@ -30,8 +28,6 @@ void Constellation::setDescription(std::string str) { name = str; }
 //prints out the information about the constellation
 void Constellation::printConstellation(){
     std::cout << name << std::endl;
-    for(int i = 0; i < comboStars.size(); i++){
-        comboStars[i].printStar();
-    }
+    star.printStar();
     std::cout << "\n" << description << std::endl;
 }

@@ -5,13 +5,14 @@
  */
 
 #include <iostream>
-#include <vector>
 #include <string>
 #include "constellation.h"
 
 class Library{
     private:
-         std::vector<Constellation> list;
+        int numConstellations = 0;
+        Constellation* constellationArray[0];
+        Constellation **constPtr = constellationArray;  
     public:
         void addConstellation(std::string, std::string, std::string);
         void findConstellation(std::string);

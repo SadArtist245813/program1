@@ -15,7 +15,7 @@
 class Constellation{
     private:
         std::string name;
-        std::vector<Star> comboStars;
+        Star star;
         std::string description;
 
     public:

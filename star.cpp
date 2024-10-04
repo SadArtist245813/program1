@@ -9,12 +9,11 @@
 #include "star.h"
 
 //allows to set the name of the star
-//requirments: the name
 void Star::setName(std::string str){
-    name = str;
+    *name = str;
 }
 
 //prints star all information about a star
 void Star::printStar(){
-    std::cout << name << " ";
+    std::cout << *name << " ";
 }

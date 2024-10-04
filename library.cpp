@@ -5,7 +5,6 @@
  */
 
 #include <iostream>
-#include <vector>
 #include <string>
 #include "library.h"
 #include "constellation.h"
@@ -14,25 +13,42 @@
 //requirments: the name, the description, the star name
 void Library::addConstellation(std::string str1, std::string str2, std::string str3){
     Constellation c;
-    c.setName("str1");
-    c.setDescription("str2");
-    c.setStar("str3");
-    list.push_back(c);
+    c.setName(str1);
+    c.setDescription(str2);
+    c.setStar(str3);
+
+    Constellation* arr[numConstellations + 1];
+    if(numConstellations != 0){
+        for(int i = 0; i < numConstellations; i++){
+            arr[i] = (*constellationArray)[i];
+        }
+    }
+    arr[numConstellations] = &c;
+    numConstellations++;
+
+    delete constellationArray;
+    constellationArray = &arr;
 }
 
 //prints the found constellation's information
 //requirments: the name
 void Library::findConstellation(std::string str){
-    for(int i = 0; i < list.size(); i++){
-        if(list[i].getName() == str){
-            list[i].printConstellation();
+    bool found = false;
+    for(int i = 0; i < numConstellations; i++){
+        if((*constellationArray)[i]->getName() == str){
+            (*constellationArray)[i]->printConstellation();
+            found = true;
         }
+    }
+
+    if(!found){
+        std::cout << "Constellations not found :(";
     }
 }
 
 //prints all the information in the library
 void Library::printAllConstillations(){
-    for(int i = 0; i < list.size(); i++){
-        list[i].printConstellation();
+    for(int i = 0; i < numConstellations; i++){
+        (*constellationArray)[i]->printConstellation();
     }
 }

@@ -9,7 +9,7 @@
 
 class Star{
     private:
-        std::string name;
+        std::string* name;
     public:
         void setName(std::string);
         void printStar();
