@@ -26,7 +26,7 @@ void Library::addConstellation(std::string str1, std::string str2, std::string s
     arr[numConstellations] = &c;
     numConstellations++;
 
-    delete &constellationArray;
+    delete constellationArray;
     constellationArray = &arr;
 }
 

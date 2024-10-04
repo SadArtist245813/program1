@@ -4,9 +4,6 @@
  *  Description: Holds information about a star.
  */
 
-#ifndef STAR_H
-#define STAR_H
-
 #include <iostream>
 #include <string>
 
@@ -17,5 +14,3 @@ class Star{
         void setName(std::string);
         void printStar();
 };
-
-#endif

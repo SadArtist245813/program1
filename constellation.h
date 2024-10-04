@@ -5,7 +5,7 @@
  */
 
 #ifndef CONSTELLATION_H
-#define CONSTELLATION_H
+#define CONSTELLATION_CPP
 
 #include <iostream>
 #include <string>

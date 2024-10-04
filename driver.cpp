@@ -61,9 +61,8 @@ int main(){
     return 0;
 }
 
-//creates the library
 Library buildLibrary(){
-    std::ifstream MyFile("constellations.txt");
+    std::ifstream MyFile("Constellations_TEST.txt");
     Library lib;
     std::string str1, str2, str3;
 
